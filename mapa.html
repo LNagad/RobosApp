@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_83bf2c900cf36457e54b251bd5d7a2c8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_83bf2c900cf36457e54b251bd5d7a2c8" ></div>
+        
+</body>
+<script>    
+    
+            var map_83bf2c900cf36457e54b251bd5d7a2c8 = L.map(
+                "map_83bf2c900cf36457e54b251bd5d7a2c8",
+                {
+                    center: [18.65657, -70.6934349],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_623289f98f69f505c7ca402610b12579 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_83bf2c900cf36457e54b251bd5d7a2c8);
+        
+    
+            var marker_92646b80638dae10cc5ef00185c61df2 = L.marker(
+                [18.5073011, -69.858715],
+                {}
+            ).addTo(map_83bf2c900cf36457e54b251bd5d7a2c8);
+        
+    
+            var icon_c7b5105d946a7825ed93a8c575602215 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92646b80638dae10cc5ef00185c61df2.setIcon(icon_c7b5105d946a7825ed93a8c575602215);
+        
+    
+        var popup_5e19b35bb112b18c9580b7a4f6490ea8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7d8468cb2ffb7a03250b57ed8153f40 = $(`<div id="html_b7d8468cb2ffb7a03250b57ed8153f40" style="width: 100.0%; height: 100.0%;">             <div              style="width: 400px; display: flex; justify-content: space-between;              flex-wrap: wrap; border-bottom: 10px solid #000">             <h3 style="width: 48%;">Chasis: <span style="font-size: 16px; font-weight: bold; color: red;">UNITED KINGDOM     </span></h3>              <h3 style="width: 48%;">Placa:  <span style="font-size: 16px; font-weight: bold; color: red;">UNITED-MOST     </span></h3>             <h3 style="width: 48%;">Fecha:  <span style="font-size: 16px; font-weight: bold; color: red;">2022-02-05     </span></h3>             <h3 style="width: 48%;">Marca:  <span style="font-size: 16px; font-weight: bold; color: red;">ford    </span></h3>             <h3 style="width: 48%;">Modelo: <span style="font-size: 16px; font-weight: bold; color: red;">La ferrari    </span></h3>             <h3 style="width: 48%;">Provincia: <span style="font-size: 16px; font-weight: bold; color: red;">Santo Domingo    </span></h3>             <h3 style="width: 48%;">Nombre: <span style="font-size: 16px; font-weight: bold; color: red;">Manolo     </span></h3>             <h3 style="width: 48%;">Cedula: <span style="font-size: 16px; font-weight: bold; color: red;">4444564     </span></h3>             <h3 style="width: 48%;">Zodiaco del caso:  <span style="font-size: 16px; font-weight: bold; color: red;">Acuario     </span></h3>             <h3 style="width: 98%;">Descripcion: <span style="font-size: 16px; font-weight: bold; color: red;">Ford black edition </span></h3>             </div></div>`)[0];
+            popup_5e19b35bb112b18c9580b7a4f6490ea8.setContent(html_b7d8468cb2ffb7a03250b57ed8153f40);
+        
+
+        marker_92646b80638dae10cc5ef00185c61df2.bindPopup(popup_5e19b35bb112b18c9580b7a4f6490ea8)
+        ;
+
+        
+    
+</script>
